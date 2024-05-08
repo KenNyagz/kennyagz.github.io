@@ -1,92 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Random Shapes</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .shape {
-      width: 100px;
-      height: 100px;
-      position: absolute;
-    }
-    .square {
-      background-color: #007bff;
-    }
-    .triangle {
-      width: 0;
-      height: 0;
-      border-left: 50px solid transparent;
-      border-right: 50px solid transparent;
-      border-bottom: 100px solid #28a745;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="row">
-      <!-- Random Squares -->
-      <div class="col-md-6">
-        <h2>Random Squares</h2>
-        <div id="randomSquares">
-          <!-- Squares will be dynamically generated here -->
-        </div>
-      </div>
-      <!-- Random Triangles -->
-      <div class="col-md-6">
-        <h2>Random Triangles</h2>
-        <div id="randomTriangles">
-          <!-- Triangles will be dynamically generated here -->
-        </div>
-      </div>
-    </div>
-  </div>
+<!DOCTYPE>
+<html>
+  <head>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Function to generate random color
-    function getRandomColor() {
-      var letters = '0123456789ABCDEF';
-      var color = '#';
-      for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-      }
-      return color;
-    }
+  </head>
+  <h1>GREENBELT EHR SYSTEM</h1>
+  <body>
 
-    // Function to generate random squares
-    function generateRandomSquares(num) {
-      var randomSquares = document.getElementById("randomSquares");
-      for (var i = 0; i < num; i++) {
-        var square = document.createElement("div");
-        square.className = "shape square";
-        square.style.backgroundColor = getRandomColor();
-        square.style.top = Math.random() * 400 + "px";
-        square.style.left = Math.random() * 400 + "px";
-        randomSquares.appendChild(square);
-      }
-    }
 
-    // Function to generate random triangles
-    function generateRandomTriangles(num) {
-      var randomTriangles = document.getElementById("randomTriangles");
-      for (var i = 0; i < num; i++) {
-        var triangle = document.createElement("div");
-        triangle.className = "shape triangle";
-        triangle.style.borderBottomColor = getRandomColor();
-        triangle.style.top = Math.random() * 400 + "px";
-        triangle.style.left = Math.random() * 400 + "px";
-        randomTriangles.appendChild(triangle);
-      }
-    }
-
-    // Generate 5 random squares and triangles on page load
-    generateRandomSquares(5);
-    generateRandomTriangles(5);
-  </script>
-</body>
+  </body>
 </html>
-
