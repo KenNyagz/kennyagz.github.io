@@ -11,12 +11,11 @@ header, section, footer {
 }
 
 header {
-    background-color: #f0f0f0;
     background-image: url('images/brugge.jpg');
 }
 
 section {
-    background-color: #fff;
+    background-color: lightblue;
     margin: 20px auto;
     max-width: 600px;
     border: 1px solid #ccc;
@@ -25,11 +24,13 @@ section {
 }
 
 footer {
-    color: #000;
-    background-image: url('images/brugge.jpg');
-    background-size: cover;
+    color: #fff;
+    padding: 3px;;
 }
 
+li {
+    list-style-type: none;
+}
 button {
     padding: 10px 20px;
     background-color: #007bff;
