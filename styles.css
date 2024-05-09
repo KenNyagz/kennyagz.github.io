@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    /*font-size: 20px;*/
     margin: 0;
     padding: 0;
     background-image: url('images/brugge.jpg');
@@ -12,6 +12,9 @@ header, section, footer {
 
 header {
     background-image: url('images/brugge.jpg');
+}
+header p {
+    font-size: 20px; 
 }
 
 section {
@@ -28,8 +31,16 @@ footer {
     padding: 3px;;
 }
 
+.contacts {
+    background: none;;
+}
+
 li {
     list-style-type: none;
+}
+.contacts img {
+    width: 20px;
+    height: 20px;
 }
 button {
     padding: 10px 20px;
