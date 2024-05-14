@@ -1,0 +1,31 @@
+* {
+  padding: 0.7%;
+  /*margin: 1%;*/
+
+/*  border: 1px black solid;*/
+}
+
+h1 {
+  padding: 1%;
+  text-align: center;
+}
+
+.overall-container {
+  display: inline-flex;
+  
+}
+
+.navigation {
+  background-image: url('images/brugge.jpg');
+  background-size: cover;
+  /*position: relative;
+  left: 30px;*/
+  width: 20%;
+  float: left;
+}
+
+.main-container {
+  display: flex;
+  background: lightblue;
+  flex-wrap: wrap;
+}
